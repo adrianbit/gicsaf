@@ -1,0 +1,45 @@
+{
+  "ProjectName": "GICSA_APP",
+  "ProjectGuid": "8d54a870-f002-48e2-aed5-e7906efb5f22",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.GICSAAPP",
+  "DisplayName": "GICSA_APP",
+  "Author": "",
+  "Description": "GICSA_APP",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "6.4.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{d116dec6-68b0-417e-a40b-8079837bcdc4}",
+  "WP8ProductID": "{adee163a-ab3a-4065-980d-304071e1f281}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.GICSAAPP",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
