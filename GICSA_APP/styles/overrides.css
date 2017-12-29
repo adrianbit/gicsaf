@@ -1,3 +1,7 @@
+.km-nova .km-view-title {
+    font-size: 1.2em;
+    line-height: inherit;
+}
 /* Colors */
 /* Theme overides - .box-shadow is deleted */
 .km-nova h1,

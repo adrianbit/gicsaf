@@ -1,0 +1,33 @@
+<div style="position:fixed;" data-role="view" data-title="View" data-layout="main" data-model="app.misPromocionesView" data-show="app.misPromocionesView.onShow" data-after-show="app.misPromocionesView.afterShow" id="misPromocionesViewScreen" class="screen">
+    <header data-role="header" style="background-color: black;">
+        <div data-role="navbar" id="" class="header-text insideHeader" style="background-image:linear-gradient(to right, rgb(246, 163, 38) 0%, rgb(246, 163, 38) 100%);padding-bottom:40px;">
+            <span style="display:grid;" class="titleHeader"></span>
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+            <div style="margin-left:-30px;padding:20px 0px 0px;position:fixed;" class="insideHeader">
+                <div class="col-xs-2 tac" onclick="javascript:gotoMenu();">
+                    <img src="images/back-icon.png" style="margin-top:-6px;">
+                </div>
+                <div class="col-xs-10" style="text-align:center;">
+                    <span style="margin-left:20px;">MIS PROMOCIONES</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- START_CUSTOM_CODE_misPromocionesView -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <div class="grid insideGrid" style="overflow-x:hidden;background-image:linear-gradient(to right, rgb(246, 163, 38) 0%, rgb(246, 163, 38) 100%);">
+        <div id="" class="tac insideGrid" style="text-align:center;padding-top:0px;width:100%;">
+        </div>
+        <div id="misPromocionesResponse" class="tac" style="padding-top:10px;">
+            <div class="row loadingData" style="padding:20px 10px 0px;" id="loadingData">
+                <div class="col-xs-12 tac">
+                    <img src="images/loading.gif" style="width:50%;margin-top:30px;"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END_CUSTOM_CODE_misPromocionesView -->
+</div>

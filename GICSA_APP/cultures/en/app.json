@@ -6,5 +6,32 @@
   },
   "home": {
     "title": "Home View"
+  },
+  "menuView": {
+    "title": "Menu View"
+  },
+  "contactoView": {
+    "title": "Contacto View"
+  },
+  "eventosView": {
+    "title": "Eventos View"
+  },
+  "novedadesView": {
+    "title": "Novedades View"
+  },
+  "privacidadView": {
+    "title": "Privacidad View"
+  },
+  "promocionesView": {
+    "title": "Promociones View"
+  },
+  "tiendasView": {
+    "title": "Tiendas View"
+  },
+  "ubicacionView": {
+    "title": "Ubicacion View"
+  },
+  "misPromocionesView": {
+    "title": "Mis Promociones View"
   }
 }

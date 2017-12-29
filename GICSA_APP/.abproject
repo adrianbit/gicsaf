@@ -2,7 +2,7 @@
   "ProjectName": "GICSA_APP",
   "ProjectGuid": "8d54a870-f002-48e2-aed5-e7906efb5f22",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.GICSAAPP",
+  "AppIdentifier": "org.nativescript.gicsaapp",
   "DisplayName": "GICSA_APP",
   "Author": "",
   "Description": "GICSA_APP",
@@ -12,15 +12,19 @@
     "1",
     "2"
   ],
-  "iOSBackgroundMode": [],
+  "iOSBackgroundMode": [
+    "location"
+  ],
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
   "FrameworkVersion": "6.4.0",
   "AndroidPermissions": [
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.DELETE_CACHE_FILES",
     "android.permission.INTERNET"
   ],
   "DeviceOrientations": [
-    "Portrait",
-    "Landscape"
+    "Portrait"
   ],
   "AndroidHardwareAcceleration": "true",
   "iOSStatusBarStyle": "Default",
@@ -41,5 +45,6 @@
     "ID_RESOLUTION_WVGA",
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
-  ]
+  ],
+  "CordovaPluginVariables": {}
 }

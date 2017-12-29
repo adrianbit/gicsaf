@@ -1,0 +1,54 @@
+<div style="position:fixed;" data-role="view" data-title="View" data-layout="main" data-model="app.ubicacionView" data-show="app.ubicacionView.onShow" data-after-show="app.ubicacionView.afterShow" id="ubicacionViewScreen" class="screen">
+    <header data-role="header" style="background-color: black;">
+        <div data-role="navbar" class="header-text insideHeader" style="">
+            <span style="display:grid;margin-left:-35px;">UBICACIÓN</span>
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+        </div>
+    </header>
+
+    <!-- START_CUSTOM_CODE_ubicacionView -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <div class="grid insideGrid" style="padding:10px 20px;">
+        <div class="tac" style="text-align:center;padding-top:10px;width:100%;">
+            <div class="col-xs-2 tac" onclick="javascript:gotoMenu();">
+                <img src="images/back-icon.png" style="margin-top:4px;">
+            </div>
+            <div class="col-xs-10 tac">
+                <select id="selectedPlazaUbicacion" class="mainSelect" style="width:105%;">
+                    <option value="">SELECCIONAR PLAZA</option>
+                    <option value="49679cf7-e392-470f-aa15-2ef2c3e843c2">FORUM BUENAVISTA</option>
+                    <option value="4dcbd585-ad4d-4c82-8250-f5e40b5b0c30">FORUM CANCUN</option>
+                    <option value="d7434e84-6f26-477b-b46f-35c8b2a4ecdf">FORUM COATZACOALCOS</option>
+                    <option value="83b439e7-499a-4962-a648-1e91e424f906">FORUM CUERNAVACA</option>
+                    <option value="2fb69ba3-2c19-4f46-9ab3-a52171be0263">FORUM CULIACAN</option>
+                    <option value="4e813ae6-1b5b-4c77-8bf1-539ac33ac56a">FORUM TEPIC</option>
+                    <option value="2a50debf-6bd7-43c6-9240-bdbabbd682d3">FORUM TLAQUEPAQUE</option>
+                    <option value="cd30a107-1b20-46bb-9a16-5bd7cf3b1b48">PASEO ARCOS BOSQUES</option>
+                    <option value="d18747eb-ce2b-41b9-8d29-f1e16641b6fd">PASEOS COAPA</option>
+                    <option value="691319f2-46fa-49e2-9d47-efff8c9587aa">PASEO INTERLOMAS</option>
+                    <option value="79630433-dd66-4d3c-bf16-eb9c66eed6fd">PASEOS METEPEC</option>
+                    <option value="4a42c61d-4623-4a0a-aea5-8475fb40bcc8">PASEOS QUERETARO</option>
+                    <option value="fa9bdb45-dedd-4fd0-aae0-8fa2bed05077">PASEOS XOCHIMILCO</option>
+                    <option value="bbd67ba6-634d-414d-99bd-f2c00f375d82">LA ISLA ACAPULCO</option>
+                    <option value="39137cf6-8270-400c-9099-16a4caf4ee81">LA ISLA CANCUN</option>
+                    <option value="81fbe51d-2ee4-45e8-ae49-cc99d40ce8a0">LA ISLA MERIDA CABO NORTE</option>
+                    <option value="eb9e1478-6de8-461c-9db1-f0352063c1fa">LA ISLA PUERTO VALLARTA</option>
+                    <option value="2307a665-6299-4215-b523-77ba38bb48e0">LAS PLAZAS OUTLET CANCUN</option>
+                    <option value="18a5f4d3-e428-429b-8158-5762a451416e">LAS PLAZAS OUTLET GUADALAJARA</option>
+                    <option value="cfea7dd6-3698-4fdf-988e-b29e980e32e5">LAS PLAZAS OUTLET LERMA</option>
+                    <option value="19d0aa11-bfc2-4eb8-8a38-c3e02bde626f">LAS PLAZAS OUTLET MONTERREY</option>
+                </select>
+            </div>
+            </br></br></br>
+        </div>
+        <div style="width:100%;margin-top:20px;margin-bottom:10px;text-align:center;">
+            <a id="googleMapsHref" data-rel="external" href="" style="padding:10px;border:1px solid #fff;color:white;width:100%;display:block;">ABRIR EN GOOGLE MAPS</a>
+        </div>
+        <div style="width:111%;margin:20px -17px 0px;"><div id="ubicacionDiv" style="width:100%;min-height:450px;"></div></div>
+        
+<br /></br></br></br>&nbsp;
+    </div>
+
+    <!-- END_CUSTOM_CODE_ubicacionView -->
+</div>

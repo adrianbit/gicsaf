@@ -8,14 +8,84 @@
       "title": "Home View",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "menuView",
+      "components": [],
+      "title": "Menu View",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "contactoView",
+      "components": [],
+      "title": "Contacto View",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "eventosView",
+      "components": [],
+      "title": "Eventos View",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "novedadesView",
+      "components": [],
+      "title": "Novedades View",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "privacidadView",
+      "components": [],
+      "title": "Privacidad View",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "promocionesView",
+      "components": [],
+      "title": "Promociones View",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "tiendasView",
+      "components": [],
+      "title": "Tiendas View",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "ubicacionView",
+      "components": [],
+      "title": "Ubicacion View",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "misPromocionesView",
+      "components": [],
+      "title": "Mis Promociones View",
+      "addToNavigation": true,
+      "icon": "home"
     }
   ],
   "dataProviders": [],
   "name": "kendoUiMobileApp",
-  "navigation": "tabstrip",
+  "navigation": "drawer",
   "view": "home",
-  "transition": "slide",
-  "showMoreTab": true,
   "skin": "nova",
   "skinMainColor": "#32364c",
   "skinTextColor": "#ffffff",

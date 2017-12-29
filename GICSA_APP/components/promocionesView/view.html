@@ -1,0 +1,46 @@
+<div style="position:fixed;overflow-x:hidden;overflow-y:auto;-webkit-overflow:touch;" data-role="view" data-title="View" data-layout="main" data-model="app.promocionesView" data-show="app.promocionesView.onShow" data-after-show="app.promocionesView.afterShow" id="promocionesViewScreen" class="screen">
+    <header data-role="header" style="background-color: black;">
+        <div data-role="navbar" id="" class="header-text insideHeader" style="">
+            <span style="display:grid;margin-left:-35px;">PROMOCIONES</span>
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+            <div style="margin-left:-58px;padding:20px 0px;position:fixed;width:102%;" class="insideHeader">
+                <div class="col-xs-2 tac" onclick="javascript:gotoMenu();">
+                    <img src="images/back-icon.png" style="margin-top:4px;">
+                </div>
+                <div class="col-xs-10 tac">
+                    <select id="selectedPlazaPromociones" class="mainSelect" style="font-size:smaller;color:#8a8a8a;width:96%;">
+                        <option style="color:#8a8a8a;" value="">SELECCIONAR PLAZA</option><option style="color:#8a8a8a;" value="e5169df4-0053-4423-b43e-fa306f5bf89f">FORUM BUENAVISTA</option><option style="color:#8a8a8a;" value="627dc99b-8478-4dc2-ae6e-3d0a593e541f">FORUM CANCUN</option><option style="color:#8a8a8a;" value="d7434e84-6f26-477b-b46f-35c8b2a4ecdf">FORUM COATZACOALCOS</option><option style="color:#8a8a8a;" value="83b439e7-499a-4962-a648-1e91e424f906">FORUM CUERNAVACA</option><option style="color:#8a8a8a;" value="cbe9e5a0-0276-4fcb-b9e8-70b03ce7f8a3">FORUM CULIACAN</option><option style="color:#8a8a8a;" value="8c7212fb-a233-4cf4-ba2f-7b54fab8c46b">FORUM TEPIC</option><option style="color:#8a8a8a;" value="79e2d8ea-cf84-493c-a3f9-cf015f5bdd7b">FORUM TLAQUEPAQUE</option><option style="color:#8a8a8a;" value="609adec6-4e31-4545-be82-85d248feef00">LA ISLA ACAPULCO</option><option style="color:#8a8a8a;" value="39137cf6-8270-400c-9099-16a4caf4ee81">LA ISLA CANCUN</option><option style="color:#8a8a8a;" value="81fbe51d-2ee4-45e8-ae49-cc99d40ce8a0">LA ISLA MERIDA CABO NORTE</option><option style="color:#8a8a8a;" value="3ad6d9b5-a771-4d44-8611-9531f19f2664">LA ISLA PUERTO VALLARTA</option><option style="color:#8a8a8a;" value="2307a665-6299-4215-b523-77ba38bb48e0">LAS PLAZAS OUTLET CANCUN</option><option style="color:#8a8a8a;" value="75164644-3d75-4395-931f-e6c57fa99e99">LAS PLAZAS OUTLET GUADALAJARA</option><option style="color:#8a8a8a;" value="4f27ad30-6398-4942-8aa1-79cbe5039570">LAS PLAZAS OUTLET LERMA</option><option style="color:#8a8a8a;" value="0b77e05c-a3f8-49ed-a3a6-5c0032848fc1">LAS PLAZAS OUTLET MONTERREY</option><option style="color:#8a8a8a;" value="51c94670-634d-432e-8c42-e229ae0e3b68">PASEO ARCOS BOSQUES</option><option style="color:#8a8a8a;" value="4b49cbc1-e2d3-445f-a2cf-178fa051e2c5">PASEO INTERLOMAS</option><option style="color:#8a8a8a;" value="d18747eb-ce2b-41b9-8d29-f1e16641b6fd">PASEOS COAPA</option><option style="color:#8a8a8a;" value="79630433-dd66-4d3c-bf16-eb9c66eed6fd">PASEOS METEPEC</option><option style="color:#8a8a8a;" value="4a42c61d-4623-4a0a-aea5-8475fb40bcc8">PASEOS QUERETARO</option><option style="color:#8a8a8a;" value="fa9bdb45-dedd-4fd0-aae0-8fa2bed05077">PASEOS XOCHIMILCO</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- START_CUSTOM_CODE_promocionesView -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <div class="grid" style="overflow-x:hidden;overflow-y:hidden;-webkit-overflow:touch;">
+        <div id="" class="tac insideGrid" style="text-align:center;padding-top:20px;width:100%;">
+            </br></br></br>
+            <div class="cols-10" style="text-align:left;padding:0px 20px;padding-top:10px;">
+                <span style="font-weight: bold;color: white;font-size: medium;">Ordenar por :</span>
+                <br/>
+                <select class="mainSelect" style="width:100%;" id="categoriasPromociones">
+                    <option value="">Categoria</option>
+                </select>
+                <br/>
+                <input type="text" id="searchPromociones" placeholder="&#xF002;" style="font-family:Arial, FontAwesome;color:white;background-color: rgba(255,255,255,.5);border: none;padding: 10px 15px;border-radius: 10px;width: 100%;margin-top: 10px;" />
+                <br/><br/><br/>
+            </div>
+        </div>
+        <div id="promocionesResponse" class="tac" style="padding-top:10px;">
+            <div class="row loadingData" style="padding:20px 10px 20px;" id="loadingData">
+                <div class="col-xs-12 tac" style="padding:20px">
+                    <img src="images/loading.gif" style="width:50%;margin-top:30px;"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END_CUSTOM_CODE_promocionesView -->
+</div>

@@ -1,3 +1,62 @@
+.mainSelect{
+    color: #afafaf;
+    padding:10px 15px;
+    border-radius:8px;
+    -webkit-appearance:none;
+    background-color:white;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06JLMvcNWmaOv2W/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==);
+    background-position : right center;
+    background-repeat: no-repeat;
+    padding-right: 1.5em;
+}
+
+.tac{
+    text-align:center;
+}
+
+.tar{
+    text-align:right;
+}
+
+.tal{
+    text-align:left;
+}
+
+.row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.km-nova .km-drawer .km-navbar{ background:#f6a426; }
+.km-nova .km-navbar, .km-nova .k-toolbar, .km-nova .km-tabstrip, .km-nova .km-drawer .km-content{
+}
+
+.km-nova .km-drawer .km-content{
+    background-image:linear-gradient(to right, #f6a426 0%, #ff8a00 100%) !important;
+}
+
+.km-button .km-icon, .km-detail .km-icon, .km-ios .km-button .km-icon, .km-list .km-icon{
+    font-size:1.6em;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: white;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:  white;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: white;
+}
+
 #kendoUiMobileApp .block {
     display: block;
     margin: 1em;
@@ -48,7 +107,11 @@
 
 #kendoUiMobileApp .km-drawer-button:after,
 #kendoUiMobileApp .km-drawer-button:before {
-    content: '\e077';
+        /* content: '\e077'; */
+    background-image: url(../images/menu-icon.png);
+    /*background-size: 100% 80%;*/
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #kendoUiMobileApp .icon-group .app-icon,
@@ -143,6 +206,10 @@
     width: 100%;
     float: none;
     padding-right: 0;
+}
+
+#kendoUiMobileApp .km-list .km-label-above select {
+    left: 0;
 }
 
 #kendoUiMobileApp form .form-content li p {
