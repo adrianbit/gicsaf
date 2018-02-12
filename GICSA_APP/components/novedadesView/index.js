@@ -52,14 +52,17 @@ function loadNovedades(selectedPlazaCookie){
             var imageNovedad = novedades[x].ImagenUrl;
             var detalleNovedad = novedades[x].DetalleUrl;
             var inicioNovedad = novedades[x].Subtitulo;
-            var fechaNovedad = novedades[x].Fecha
+            var fechaNovedad = novedades[x].Fecha == undefined ? "" : novedades[x].Fecha;
+            var contenidoNovedad = novedades[x].Contenido;
 
-            var display = "none";
-            if (detalleNovedad.length >= 400){
-                detalleNovedad = detalleNovedad.substring(0, 398);
-                display = "block";
+            var displayLink = "none";
+            var displayContent = "block";
+
+            if (contenidoNovedad.length >= 180){
+                displayLink = "block";
+                displayContent = "none";
             }
-    
+
             var share = "share('Noticia : "+tituloNovedad+"', '', '"+imageNovedad+"', '"+detalleNovedad+"');";
 
             var subNovedad = "";
@@ -73,14 +76,15 @@ function loadNovedades(selectedPlazaCookie){
             } 
 
             var htmlNovedad = '' +
-                '<div class="row" style="padding:20px 0px 0px;background-color:white;">'+
+                '<div class="row" style="padding:0px 0px 20px;background-color:white;">'+
                     '<div class="col-xs-12" style="padding:0px;">'+
-                        '<img src="'+imageNovedad+'&size=450" style="width:100%;background: url(images/placeholder.jpg) 100%;min-height:160px;min-width:100%;"/>'+
+                        '<img src="'+imageNovedad+'&size=450" style="width:100%;background: url(images/placeholder.jpg) 100%;background-size:contain;min-height:160px;min-width:100%;"/>'+
                     '</div>'+
                     '<div class="col-xs-12" style="margin-top:20px;text-align:left;padding:0px 30px;">'+
                         '<span>'+tituloNovedad+'</span>'+
                         '<br/>'+
-                        '<a href="'+detalleNovedad+'" target="_blank" style="display:'+display+'">Leer más</a>'+
+                        '<a id="newL'+x+'" href="javascript:$(&#39;#new'+x+'&#39;).show(&#39;&#39;);$(&#39;#newL'+x+'&#39;).hide();" style="display:'+displayLink+'">Leer más</a>'+
+                        '<div id="new'+x+'" style="text-align:justify;margin-top:5px;color:#9e9e9e;display:'+displayContent+'">'+contenidoNovedad+'</div>'+
                     '</div>'+
                     subNovedad +
                     '<div class="col-xs-12 tal" style="margin:10px 0px 10px;padding:0px 30px;">'+

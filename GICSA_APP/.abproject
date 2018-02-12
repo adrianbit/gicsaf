@@ -2,7 +2,7 @@
   "ProjectName": "GICSA_APP",
   "ProjectGuid": "8d54a870-f002-48e2-aed5-e7906efb5f22",
   "projectVersion": 1,
-  "AppIdentifier": "org.nativescript.gicsaapp",
+  "AppIdentifier": "show.ios.gicsa",
   "DisplayName": "GICSA_APP",
   "Author": "",
   "Description": "GICSA_APP",

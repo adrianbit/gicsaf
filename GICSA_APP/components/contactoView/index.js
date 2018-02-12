@@ -13,10 +13,10 @@ app.contactoView = kendo.observable({
         
         logoPlaza(selectedPlazaCookie, "contactoLogo");
         
-        coordsAddress(mapUbicacion(selectedPlazaCookie));
+        /** coordsAddress(mapUbicacion(selectedPlazaCookie));
         setTimeout(function(){
             initializeMap(dS, dD, coordsActualPos, coordsAddressPos,"contactoDiv"); 
-        }, 3000);
+        }, 3000);*/
 
         /**$(".insideHeader").css("background-image","linear-gradient(to right, #f6a426 0%, #ff8a00 100%)");
         $(".insideGrid").css("background-image","linear-gradient(to right, #f6a426 0%, #ff8a00 100%)");

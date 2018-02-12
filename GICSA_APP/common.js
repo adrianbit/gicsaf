@@ -1,7 +1,8 @@
-var SERVER = "http://167.114.156.36";
-//var SERVER = "http://gicsanetwork.com";
+//var SERVER = "http://167.114.156.36";
+var SERVER = "http://gicsanetwork.com";
 
-var SERVERTEMP = "http://167.114.156.36";
+var SERVERDEV = "http://167.114.156.36";
+var SERVERTEMP = "http://gicsanetwork.com";
 var CENTROS_APP = "";
 var centrosAppArray = {};
 
@@ -68,7 +69,7 @@ function loadCentros(idSelect){
             var centros = [];
             var ajaxCalls = [];
 
-            var centrosSelect = "<option style='color:#8a8a8a;' value=''>SELECCIONAR PLAZA</option>";
+            var centrosSelect = "<option style='color:#8a8a8a;' value=''>SELECCIONAR CENTRO COMERCIAL</option>";
             for (var i=0;i<centrosSort.length;i++) {
 
                 for (var x=0;x<data.length;x++) {

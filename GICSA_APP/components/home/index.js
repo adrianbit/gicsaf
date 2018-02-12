@@ -3,15 +3,30 @@
 var selectedPlaza = "";
 var emailNewsletter = "";
 var currentApp = app;
+var defaultApp;
 
 app.home = kendo.observable({
     onShow: function() { loadCentros("selectPopUp1"); },
-    afterShow: function() {  }
+    afterShow: function() { initFirebase(); }
 });
 app.localization.registerView('home');
 
 // START_CUSTOM_CODE_home
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
+
+function initFirebase(){
+    if (defaultApp==undefined){
+        var config = {
+            apiKey: "AIzaSyCl2CEfXNXuTJ7BXAdjfy1ZILftxkEq-uU",
+            authDomain: "gicsa-apps.firebaseapp.com",
+            databaseURL: "https://gicsa-apps.firebaseio.com",
+            projectId: "gicsa-apps",
+            storageBucket: "gicsa-apps.appspot.com",
+            messagingSenderId: "382334266552"
+        };
+        defaultApp = firebase.initializeApp(config);
+    }
+}
 
 function popUp1(){
     selectedPlaza = $("#selectPopUp1").val();
